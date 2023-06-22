@@ -1,3 +1,18 @@
 #header-main{
     background-image: url("");
 }
+
+#bluelight {
+    width: 22rem;
+    height: 22rem;
+    background-color: rgb(0,100,160);
+    border-radius: 20rem;
+    shadow: 7px 7px 7px 7px skyblue;
+    margin-right: 16rem;
+    
+    opacity: 0.1;
+
+
+
+
+}

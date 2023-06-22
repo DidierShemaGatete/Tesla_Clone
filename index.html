@@ -11,35 +11,63 @@
 
 <body>
 
-    <nav class="flex flex-col justify-center items-center text-white bg-slate-800 py-2 sticky top-0 z-10 ">
-        <div class="flex gap-1 py-3
+    <nav class="flex flex-col justify-center items-center text-white bg-slate-800 py-2 sticky top-0 z-10 sm:flex sm:flex-row sm:justify-center sm:gap-4 sm:items-center ">
+        <div class="flex gap-1 py-3 sm:flex sm:py-1
         ">
-            <p class="font-semibold text-sm">3</p>
-            <p class="font-semibold text-sm">Years</p>
+            <p class="font-semibold text-sm sm:text-lg">3</p>
+            <p class="font-semibold text-sm sm:text-lg">Years</p>
 
-            <p class="font-semibold text-sm">Unlimited</p>
-            <p class="font-semibold text-sm">Free</p>
-            <p class="font-semibold text-sm">Supercharging</p>
+            <p class="font-semibold text-sm sm:text-lg ">Unlimited</p>
+            <p class="font-semibold text-sm sm:text-lg">Free</p>
+            <p class="font-semibold text-sm sm:text-lg">Supercharging</p>
         </div>
 
-        <div class="flex gap-1 text-sm">
-            <p class="font-semibold text-sm">With</p>
-            <p class="underline font-semibold text-sm">Model S purchase</p>
+        <div class="flex gap-1 text-sm sm:text-lg py-1">
+            <p class="font-semibold text-sm sm:text-base sm:font-normal">With</p>
+            <p class="underline font-semibold text-sm sm:text-base sm:font-normal">Model S purchase</p>
 
 
         </div>
 
+        <!-- <div id="bluelight" class=" absolute left -2 -top-80 shadow-2xl"></div> 
+ -->
     </nav>
 
-    <header class="#header-main bg-slate-300 bg-cover bg-no-repeat w-full " style="background-image: url('./media/Model-S-Main-Hero-Mobile-LHD (2).avif') ">
+    <header class="#header-main bg-slate-300 bg-cover bg-no-repeat w-full sm:bg-auto sm:w-full sm:bg-no-repeat sm:" style="background-image: url('./media/Model-S-Main-Hero-Mobile-LHD (2).avif') ">
 
         <div class="flex justify-between mx-5 items-center">
-            <div>
+            <div class="sm:ml-3 sm:-mt-3">
 
                 <img class="w-24" src="./media/tesla-9-logo-svgrepo-com.svg" alt="">
             </div>
 
-            <div>
+            <!-- ON SM: SCREEN -->
+
+            <div class="hidden sm:flex justify-between gap-64 items-center">
+                <div class="flex gap-3 ">
+                    <p class="text-sm font-medium opacity-80 p-1 hover:bg-blend-darken">Model S</p>
+                    <p class="text-sm font-medium opacity-80 p-1 hover:bg-blend-darken">Model 3</p>
+                    <p class="text-sm font-medium opacity-80 p-1 hover:bg-blend-darken">Model X</p>
+                    <p class="text-sm font-medium opacity-80 p-1 hover:bg-blend-darken">Model Y</p>
+                    <p class="text-sm font-medium opacity-80 p-1 hover:bg-blend-darken">Solar Roof</p>
+                    <p class="text-sm font-medium opacity-80 p-1 hover:bg-blend-darken">Solar Panels</p>
+                    <p class="text-sm font-medium opacity-80 p-1 hover:bg-blend-darken">PowerWall</p>
+                    <p class="text-sm font-medium opacity-80 p-1 hover:bg-blend-darken">Model S</p>
+                </div>
+
+                <div class="flex gap-3">
+
+                    <p class="text-sm font-medium opacity-80 p-1 hover:bg-blend-darken"> Shop</p>
+                    <p class="text-sm font-medium opacity-80 p-1 hover:bg-blend-darken">Account</p>
+                    <p class="text-sm font-medium opacity-80 p-1 hover:bg-blend-darken">Menu</p>
+                </div>
+
+            </div>
+
+
+
+
+            <div class="sm:hidden">
                 <button class=" py-1 px-2 shadow-inner bg-inherit text-xs rounded opacity-70">Menu</button>
             </div>
         </div>
@@ -54,7 +82,7 @@
 
 
 
-        <div class="flex justify-center gap-12 text-white pt-96 mt-96">
+        <div class="flex justify-center mb-3 gap-12 sm:gap-x-48 text-white pt-96 mt-96">
 
             <div class="flex flex-col gap-4 ">
                 <p class="font-bold text-2xl">
@@ -88,9 +116,9 @@
 
         </div>
 
-        <div class="md:flex flex flex-col justify-around gap-5 py-5">
-            <button class="py-1 px-10 bg-white mx-12 border-2">Order Now </button>
-            <button class="border-2 py-1 px-10 font-medium text-white  mx-12 hover:bg-white hover:text-black duration-600">Demo Drive</button>
+        <div class="sm:flex sm:flex-row flex flex-col justify-around sm:justify-center sm:items-center sm:gap-1 gap-5 py-5">
+            <button class="sm:w-1/5 py-1 px-10 bg-white mx-12 border-2 font-medium ">Order Now </button>
+            <button class="sm:w-1/5 border-2 py-1 px-10 font-medium text-white  mx-12 hover:bg-white hover:text-black duration-600 opacity-80">Demo Drive</button>
 
 
         </div>
@@ -108,6 +136,8 @@
 
         
     </header>
+
+    
     <div class="-mt-6">
         <img src="./media/Model-S-Interior-Hero-Mobile-LHD.avif" alt="">
     </div>
@@ -122,38 +152,54 @@
         <div class="border-b opacity-20"></div>
     </div>
 
-    <div class="text-xs font-semibold text-white bg-black pt-14">
-        <img src="./media/MS-Interior-Grid-A-Desktop.avif" alt="">
+    <div class="text-xs font-semibold text-white bg-black pt-14 sm:flex sm:flex-row sm:justify-around sm:items-center">
+        <div class="sm:overflow-hidden sm:w-1/3">
+            <img class="hover:scale-110 duration-500" src="./media/MS-Interior-Grid-A-Desktop.avif" alt="">
+        </div>
 
-        <h1  class="mx-8 py-4 opacity-90">Stay Connected</h1>
-        <p class="mx-8 pb-48 opacity-90">
+        <div class="sm:w-1/3">
 
-            Instantly connect with multi-device Bluetooth, or fast charge devices with wireless and 36-watt USB-C charging.</p>
+            <h1  class="mx-8 py-4 opacity-90 sm:font-bold sm:text-xl sm:py-3">Stay Connected</h1>
+            <p class="mx-8 pb-48 opacity-90 sm:text-lg">
+
+                Instantly connect with multi-device Bluetooth, or fast charge devices with wireless and 36-watt USB-C charging.</p>
+
+        </div>
 
     </div>
 
-    <div class="text-xs font-semibold text-white bg-black pt-14">
+    <div class="text-xs font-semibold text-white bg-black pt-14 sm:flex sm:flex-row-reverse sm:justify-around">
+
+        <div class="sm:overflow-hidden sm:w-1/3">
+            <img class=" hover:scale-110 duration-500 " src="./media/Model-S-Specs-Hero-Mobile-LHD.avif" alt="">
+        </div>
     
+        <div class="sm:w-1/3">
+            <h1  class="mx-8 py-4 opacity-90 sm:font-bold sm:text-xl sm:py-3">Immersive Sound</h1>
+            <p class="mx-8 pb-48 opacity-90 sm:text-lg">
 
-        <h1  class="mx-8 py-4 opacity-90">Immersive Sound</h1>
-        <p class="mx-8 pb-48 opacity-90">
-
-            A 22-speaker, 960-watt audio system with Active Road Noise Reduction offers immersive listening and studio-grade sound quality.</p>
+                A 22-speaker, 960-watt audio system with Active Road Noise Reduction offers immersive listening and studio-grade sound quality.</p>
+        </div>
 
     </div>
 
-    <div class="text-xs font-semibold text-white bg-black ">
+    <div class="text-xs font-semibold text-white bg-black sm:flex sm:flex-row sm:justify-around py-10">
         
-        <img class="h-1/2" src="./media/MS-Interior-Grid-D-Desktop.avif" alt="">
-        <h1  class="mx-8 py-4 opacity-90">Room for Everything</h1>
-        <p class="mx-8 pb-10 opacity-90 ">
+        <div class="sm:w-1/3 sm:overflow-hidden">
+            <img class=" sm:hover:scale-110 duration-500" src="./media/MS-Interior-Grid-D-Desktop.avif" alt="">
+        </div>
 
-            With front and rear trunks and fold-flat seats you can fit your bike without taking the wheel off—and your luggage too. <span class="underline">Compare Models</span></p>
+        <div class="sm:w-1/3">
+            <h1  class="mx-8 py-4 opacity-90 sm:font-bold sm:text-xl">Room for Everything</h1>
+            <p class="mx-8 pb-10 opacity-90 ">
+
+                With front and rear trunks and fold-flat seats you can fit your bike without taking the wheel off—and your luggage too. <span class="underline">Compare Models</span></p>
+        </div>
 
     </div>
 
     <div class="relative">
-        <img class="w-full " src="./media/Model-S-Performance-Hero-Mobile-LHD.avif" alt="">
+        <img class="w-full sm:w-full sm:min-h-screen" src="./media/Model-S-Performance-Hero-Mobile-LHD.avif" alt="">
         
         <div class="flex justify-center text-white gap-12  bottom-1/4 absolute mx-10">
 
@@ -193,27 +239,42 @@
 
     </div>
 
-    <div class="">
-        <p class="opacity-80 mx-7 pt-5">Plaid </p>
+    <div class="sm:flex sm:justify-around sm:items-start sm:py-10 sm:mx-14">
 
-        <h3 class="font-semibold text-2xl mx-7 pb-5">Beyond Ludicrous</h3>
+        <div class="sm:w-1/2">
+            <p class="opacity-80 mx-7 pt-5 sm:text-xl sm:font-medium sm:opacity-75">Plaid </p>
+        
 
-        <p class="font-semibold text-xs mx-7 opacity-80">Model S Plaid has the quickest acceleration of any vehicle in production. Updated battery architecture for all Model S trims enables back-to-back track runs without performance degradation. <span class="underline">Chat with a Tesla Advisor</span> to learn more about Model S or <span class="underline">schedule a demo drive</span> today.</p>
+            <h3 class="font-semibold text-2xl mx-7 pb-5 sm:text-4xl sm:font-medium sm:opacity-80">Beyond Ludicrous</h3>
+
+            <div class=" hidden md:flex flex-col justify-around gap-5 py-2">
+                <button class="w-1/3 py-1 px-10 bg-white mx-8 border-2 font-semibold text-sm hover:bg-black hover:text-white duration-500">Order Now </button>
+                <button class=" w-1/3 border  text-sm py-1 px-10 font-medium  mx-8 bg-slate-50 text-black duration-600 opacity-75">Compare Models</button>
+        
+        
+            </div>
+        </div>  
+
+        <p class="sm:w-1/2 font-semibold text-xs mx-7 opacity-70 sm:text-sm">Model S Plaid has the quickest acceleration of any vehicle in production. Updated battery architecture for all Model S trims enables back-to-back track runs without performance degradation. <span class="underline">Chat with a Tesla Advisor</span> to learn more about Model S or <span class="underline">schedule a demo drive</span> today.</p>
     </div>
 
-    <div class="md:flex flex flex-col justify-around gap-5 py-5">
+    <div class="md:hidden flex flex-col justify-around gap-5 py-5">
         <button class="py-1 px-10 bg-white mx-8 border-2 font-semibold text-sm hover:bg-black hover:text-white duration-500">Order Now </button>
         <button class="border  text-sm py-1 px-10 font-medium  mx-8 bg-slate-50 text-black duration-600 opacity-75">Compare Models</button>
 
 
     </div>
     
-    <div class="bg-slate-50 my-6">
-        <h1 class="font-semibold text-2xl py-10 pb-3 mx-8">Electric Powertrain</h1>
+    <div class="bg-slate-50 my-6 sm:flex sm:flex-col ">
 
-        <p class="font-lg opacity-60 mx-8 font-semibold">Model S platforms unite powertrain and battery technologies for unrivaled performance, range and efficiency. New module and pack thermal architecture allows faster charging and gives you more power and endurance in all conditions.
+        <div class="sm:w-3/5">
+            <h1 class="sm:w-1/2 font-semibold text-2xl py-10 pb-3 mx-8">Electric Powertrain</h1>
+        
 
-        </p>
+            <p class="sm:justify-center sm:items-center sm:py-5 font-lg opacity-60 mx-8 font-semibold">Model S platforms unite powertrain and battery technologies for unrivaled performance, range and efficiency. New module and pack thermal architecture allows faster charging and gives you more power and endurance in all conditions.
+
+            </p>
+        </div>
 
 
         <!-- images sliding on MOBILE view and changes animates on desktop view -->
@@ -502,7 +563,7 @@
 
     <div class="pt-10">
 
-        <img src="./media/Model-S-Specs-Hero-Mobile-LHD.avif" alt="">
+        <img class="hover:scale-x-105" src="./media/Model-S-Specs-Hero-Mobile-LHD.avif" alt="">
 
         <div class="bg-black text-white">
 
